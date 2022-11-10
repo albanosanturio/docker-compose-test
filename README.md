@@ -1,25 +1,26 @@
+See [Markdown Cheatsheet] (https://www.markdownguide.org/cheat-sheet/)
+
 # docker-compose-test
 
->NOTE: It's important to always make sure to delete previous images and containers (running or not running) <
+NOTE: It's important to always make sure to delete previous images and containers (running or not running)
 
->second blockquote
-*italic test*
-**bold test**
 
 - list1
 - list2
 - list3
 
-
-Testing double spaces for new line  
-This should do it
+First let's start by testing the commands for listing images and containers  
+This will show the current containers  
 
 ```bash
 docker container ls     running
 docker container ls -a  running + not running
 docker container ls -q  only id
 docker container ls -aq only id + running + not running
-```
+```  
+
+Now we want to list the current images  
+Use these commands:  
 
 ```bash
 docker image ls         running
