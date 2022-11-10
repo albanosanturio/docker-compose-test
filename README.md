@@ -2,11 +2,12 @@
 
 Important: always check to delete previous images and containers (running or not running)
 
+```bash
 docker container ls     running
 docker container ls -a  running + not running
 docker container ls -q  only id
 docker container ls -aq only id + running + not running
-
+```
 
 docker image ls         running
 docker image ls -a      running + not running
@@ -18,3 +19,7 @@ docker container rm -f $(docker container ls -aq)
 docker image rm -f $(docker image ls -aq)
 
 Updating:
+
+
+docker network ls
+do
