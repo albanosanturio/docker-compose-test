@@ -1,6 +1,13 @@
 # docker-compose-test
 
-"NOTE: It's important to always make sure to delete previous images and containers (running or not running) \n"
+>NOTE: It's important to always make sure to delete previous images and containers (running or not running)
+>second blockquote
+*italic test*
+**bold test**
+
+- list1
+- list2
+- list3
 
 ```bash
 docker container ls     running
