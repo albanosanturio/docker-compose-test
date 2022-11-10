@@ -1,6 +1,7 @@
 # docker-compose-test
 
->NOTE: It's important to always make sure to delete previous images and containers (running or not running)
+>NOTE: It's important to always make sure to delete previous images and containers (running or not running) <
+
 >second blockquote
 *italic test*
 **bold test**
