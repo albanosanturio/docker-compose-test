@@ -1,6 +1,6 @@
 # docker-compose-test
 
-Important: always check to delete previous images and containers (running or not running)
+"NOTE: It's important to always make sure to delete previous images and containers (running or not running) \n"
 
 ```bash
 docker container ls     running
@@ -9,17 +9,22 @@ docker container ls -q  only id
 docker container ls -aq only id + running + not running
 ```
 
+```bash
 docker image ls         running
 docker image ls -a      running + not running
 docker image ls -q      only id
 docker image ls -aq     only id + running + not running
+```
 
-So, to remove:
+Thus, the commands to remove would be:
+```bash
 docker container rm -f $(docker container ls -aq)
 docker image rm -f $(docker image ls -aq)
+```
 
-Updating:
+Regarding networking, we should try these commands:
 
-
+```bash
 docker network ls
-do
+do exec -it $CONTAINER_ID sh
+```
